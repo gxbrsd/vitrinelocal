@@ -77,7 +77,9 @@
   .card .btn{width:100%;justify-content:center;}
 
   /* portfolio */
-  .port-card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:26px;box-shadow:var(--shadow);max-width:460px;margin:0 auto;text-align:center;}
+  .port-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;max-width:960px;margin:0 auto;}
+  @media (max-width:700px){.port-grid{grid-template-columns:1fr;}}
+  .port-card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:26px;box-shadow:var(--shadow);text-align:center;}
   .port-card .tagbadge{display:inline-block;background:rgba(18,66,143,0.08);color:var(--blue);font-size:12px;font-weight:700;padding:5px 12px;border-radius:100px;margin-bottom:14px;}
   .port-card h3{margin:0 0 8px;color:var(--blue-dark);}
   .port-card p{font-size:14px;color:#555;line-height:1.55;margin:0 0 20px;}
@@ -183,11 +185,19 @@
       <span class="tag">Portfólio</span>
       <h2>Um exemplo de entrega</h2>
     </div>
-    <div class="port-card">
-      <span class="tagbadge">Demonstração</span>
-      <h3>Supermercado Nagumo — Vila Sônia</h3>
-      <p>Landing page de demonstração feita a partir de dados públicos do Google Maps, pra mostrar o formato de entrega. Sem vínculo oficial com a rede.</p>
-      <a class="btn" style="background:var(--blue);color:#fff;width:100%;justify-content:center;" href="nagumo-landing.html" target="_blank">Ver demonstração</a>
+    <div class="port-grid">
+      <div class="port-card">
+        <span class="tagbadge">Demonstração</span>
+        <h3>Supermercado Nagumo — Vila Sônia</h3>
+        <p>Landing page de demonstração feita a partir de dados públicos do Google Maps, pra mostrar o formato de entrega. Sem vínculo oficial com a rede.</p>
+        <a class="btn" style="background:var(--blue);color:#fff;width:100%;justify-content:center;" href="nagumo-landing.html" target="_blank">Ver demonstração</a>
+      </div>
+      <div class="port-card">
+        <span class="tagbadge">Demonstração</span>
+        <h3>Cartório Shoji — Boqueirão</h3>
+        <p>Landing page institucional com identidade visual própria, adaptada ao segmento do negócio. Sem vínculo oficial com o cartório.</p>
+        <a class="btn" style="background:var(--blue);color:#fff;width:100%;justify-content:center;" href="cartorio-shoji.html" target="_blank">Ver demonstração</a>
+      </div>
     </div>
   </div>
 </section>
@@ -196,7 +206,7 @@
   <div class="wrap">
     <h2>Coloque seu comércio na internet</h2>
     <p>Solicite uma demonstração personalizada do seu negócio, sem compromisso.</p>
-    <a class="btn btn-outline" href="https://wa.me/5513991845637text=Ol%C3%A1%21%20Vi%20o%20site%20da%20Vitrine%20Local%20e%20gostaria%20de%20solicitar%20uma%20demonstra%C3%A7%C3%A3o%20gratuita." target="_blank" rel="noopener">Chamar agora</a>
+    <a class="btn btn-outline" href="https://wa.me/5513991845637?text=Ol%C3%A1%21%20Vi%20o%20site%20da%20Vitrine%20Local%20e%20gostaria%20de%20solicitar%20uma%20demonstra%C3%A7%C3%A3o%20gratuita." target="_blank" rel="noopener">Chamar agora</a>
   </div>
 </section>
 
